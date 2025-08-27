@@ -162,8 +162,7 @@ export default function TelimanMaintenanceLanding() {
               />
             </div>
             <div className="text-sm text-white md:text-center">
-              © {new Date().getFullYear()} Teliman Logistique — Tous droits
-              réservés
+              © Teliman Logistique — Tous droits réservés
             </div>
             <div className="flex flex-col gap-2 md:items-end text-sm text-white">
               <a
