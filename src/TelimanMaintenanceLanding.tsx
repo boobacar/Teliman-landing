@@ -100,27 +100,16 @@ export default function TelimanMaintenanceLanding() {
         style={{ background: COLORS.background, color: COLORS.text }}
       >
         {/* Header */}
-        <header
-          className="w-full border-b sticky top-0 z-40"
-          style={{
-            borderColor: COLORS.primary + "33",
-            background: "rgba(255,255,255,0.7)",
-          }}
-        >
+        <header className="w-full border-b sticky top-0 z-40 bg-green-800">
           <div className="mx-auto max-w-6xl px-4 h-16 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <img
                 src={logo}
                 alt="Teliman Logistique — logo"
-                className="h-10 w-auto object-contain"
+                className="h-10 w-auto object-contain rounded-lg"
               />
             </div>
-            <div
-              className="text-sm font-medium"
-              style={{ color: COLORS.primary }}
-            >
-              Transport & logistique
-            </div>
+            <div className=" font-bold text-white">Transport & logistique</div>
           </div>
         </header>
 
@@ -132,13 +121,7 @@ export default function TelimanMaintenanceLanding() {
               alt="Camions sur site minier"
               className="w-full h-full object-cover"
             />
-            <div
-              className="absolute inset-0"
-              style={{
-                background:
-                  "linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.55))",
-              }}
-            />
+            <div className="bg-gradient-to-r from-amber-900/50 to-green-800/50 absolute inset-0" />
           </div>
 
           <div className="relative z-10 mt-20 mx-auto h-full max-w-6xl px-4 py-28 md:py-40 text-center text-white">
@@ -149,13 +132,17 @@ export default function TelimanMaintenanceLanding() {
               transition={{ duration: 0.5 }}
             >
               <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight">
-                Teliman Logistique
+                <span style={{ color: COLORS.accent }}>Teliman</span>{" "}
+                <span style={{ color: COLORS.primary }}>Logistique</span>
               </h1>
               <div
-                className="mt-10 inline-flex items-center gap-3 rounded-2xl px-4 py-3 font-semibold"
+                className="mt-10 inline-flex items-center gap-3 rounded-2xl px-4 py-3 font-semibold md:text-4xl"
                 style={{ background: "#ffffff", color: COLORS.text }}
               >
-                <Wrench className="h-5 w-5" style={{ color: COLORS.accent }} />
+                <Wrench
+                  className="md:h-10 md:w-10"
+                  style={{ color: COLORS.accent }}
+                />
                 <span style={{ color: COLORS.primary }}>
                   Site web en maintenance
                 </span>
@@ -165,10 +152,7 @@ export default function TelimanMaintenanceLanding() {
         </section>
 
         {/* Footer */}
-        <footer
-          className="w-full border-t"
-          style={{ borderColor: COLORS.primary + "33", background: "#fff" }}
-        >
+        <footer className="w-full border-t font-bold bg-amber-900">
           <div className="mx-auto max-w-6xl px-4 py-8 grid md:grid-cols-3 gap-6 items-center">
             <div className="flex items-center gap-3">
               <img
@@ -177,17 +161,17 @@ export default function TelimanMaintenanceLanding() {
                 className="h-10 w-auto object-contain"
               />
             </div>
-            <div className="text-sm text-gray-600 md:text-center">
+            <div className="text-sm text-white md:text-center">
               © {new Date().getFullYear()} Teliman Logistique — Tous droits
               réservés
             </div>
-            <div className="flex flex-col gap-2 md:items-end text-sm">
+            <div className="flex flex-col gap-2 md:items-end text-sm text-white">
               <a
-                href="mailto:contact@teliman-logistique.com"
+                href="mailto:contact@telimanlogistique.com"
                 className="inline-flex items-center gap-2 hover:underline"
               >
-                <Mail className="h-4 w-4" style={{ color: COLORS.primary }} />{" "}
-                contact@teliman-logistique.com
+                <Mail className="h-4 w-4" style={{ color: COLORS.accent }} />{" "}
+                contact@telimanlogistique.com
               </a>
               <a
                 href="tel:+2250704446683"
@@ -195,12 +179,12 @@ export default function TelimanMaintenanceLanding() {
               >
                 <PhoneCall
                   className="h-4 w-4"
-                  style={{ color: COLORS.primary }}
+                  style={{ color: COLORS.accent }}
                 />{" "}
                 +225 07 04 44 66 83
               </a>
               <p className="inline-flex items-center gap-2">
-                <MapPin className="h-4 w-4" style={{ color: COLORS.primary }} />{" "}
+                <MapPin className="h-4 w-4" style={{ color: COLORS.accent }} />{" "}
                 Côte d’Ivoire
               </p>
             </div>
