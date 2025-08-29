@@ -170,7 +170,14 @@ export default function TelimanMaintenanceLanding() {
                 className="inline-flex items-center gap-2 hover:underline"
               >
                 <Mail className="h-4 w-4" style={{ color: COLORS.accent }} />{" "}
-                contact@telimanlogistique.com
+                coordination@telimanlogistique.com
+              </a>
+              <a
+                href="mailto:contact@telimanlogistique.com"
+                className="inline-flex items-center gap-2 hover:underline"
+              >
+                <Mail className="h-4 w-4" style={{ color: COLORS.accent }} />{" "}
+                marie@telimanlogistique.com
               </a>
               <a
                 href="tel:+2250704446683"
